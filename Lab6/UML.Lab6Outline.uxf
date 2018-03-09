@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>180</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class&gt;&gt;
+Player
+--
+&lt;&lt;Attributes&gt;&gt;
+-Name
+-Image
+--
+&lt;&lt;Methods&gt;&gt;
++get name from user
++get image from paint
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>550</y>
+      <w>300</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Movement
+--
+&lt;&lt;Attributes&gt;&gt;
+-Up
+-Down
+-Right
+-Left
+--
+&lt;&lt;Methods&gt;&gt;
++when 'W' pressed make charecter move up
++when 'A' pressed make character move left
++when 'S' pressed make character move down
++when 'D' pressed make character move right
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>180</y>
+      <w>330</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Game
+--
+&lt;&lt;Attributes&gt;&gt;
+-Score
+-Menu Screen
+-Game Screen
+-Game Over Screen
+--
+&lt;&lt;Methods&gt;&gt;
++get player score with how many items collected
++menu screen with a play button
++game screen after play button pressed
++game over screen pop-up when enemy eats player</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>160</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Enemy
+--
+&lt;&lt;Attributes&gt;&gt;
+-Follow Player
+-Eat Player
+-Image
+--
+&lt;&lt;Methods&gt;&gt;
++moves toward player position
++when collide with player game over
++get enemy image from paint</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>550</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Collect Item
+--
+&lt;&lt;Attributes&gt;&gt;
+-Image
+-Item Collected
+--
+&lt;&lt;Methods&gt;&gt;
++get image for item from paint
++when player collids with item 
+item is collected/dissapears and
+add 1 to players score
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1350</x>
+      <y>510</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>390</y>
+      <w>100</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>230</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;30.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>980</x>
+      <y>340</y>
+      <w>70</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>190</x>
+      <y>360</y>
+      <w>620</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;600.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>250</y>
+      <w>250</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>390</y>
+      <w>250</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+</diagram>
